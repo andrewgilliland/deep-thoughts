@@ -11,8 +11,8 @@ import lake from "../images/lake-1.jpg"
 const IndexPageStyles = styled.div`
   background-image: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.8),
-      rgba(0, 0, 0, 0.8)
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
     ),
     url(${lake});
   height: 100vh;
