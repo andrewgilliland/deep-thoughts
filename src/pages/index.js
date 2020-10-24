@@ -2,8 +2,9 @@ import React from "react"
 import styled from "styled-components"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+
+import "../styles/animations.css"
 
 import lake from "../images/lake-1.jpg"
 
@@ -30,12 +31,22 @@ const IndexPageStyles = styled.div`
 
   h1 {
     margin-top: 3rem;
+    text-align: center;
+    opacity: 0;
+    animation: 1s ease-in 0s forwards moveInBottom;
   }
 
   h2 {
     margin-top: 1rem;
     font-size: 3rem;
     line-height: 1.2;
+    opacity: 0;
+    animation: 1s ease-in 1s forwards moveInBottom;
+  }
+
+  span {
+    font-size: 1.5rem;
+    color: #aaa;
   }
 
   p {
@@ -47,6 +58,8 @@ const IndexPageStyles = styled.div`
     max-width: 12em;
     line-height: 1.375;
     font-style: italic;
+    opacity: 0;
+    animation: 1s ease-in 2s forwards moveInBottom;
   }
 `
 
@@ -54,7 +67,10 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Deep Thoughts" />
     <IndexPageStyles>
-      <h1>Deep Thoughts</h1>
+      <h1>
+        Deep Thoughts <br />
+        <span>by Jack Handey</span>
+      </h1>
       <h2>
         Inspiration for
         <br /> the Uninspired
